@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="4eU-9O-8fO" userLabel="PhoneBookCell" customClass="PhoneBookCell" customModule="GoTalk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4eU-9O-8fO" id="9ww-F7-gRA">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-S4-TNb">
+                        <rect key="frame" x="8" y="8" width="133.5" height="133.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="AaA-S4-TNb" secondAttribute="height" multiplier="1:1" id="j72-hj-q4r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cap-QW-wjL">
+                        <rect key="frame" x="149.5" y="8" width="262.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="hHz-G6-b4g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wyC-Pb-nbS">
+                        <rect key="frame" x="149.5" y="125.5" width="143.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="JIq-DU-wCC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Play" translatesAutoresizingMaskIntoConstraints="NO" id="5os-uO-Uzx">
+                        <rect key="frame" x="377" y="111.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="H8x-xo-l0d"/>
+                            <constraint firstAttribute="width" constant="30" id="bjC-7M-9Fr"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Record" translatesAutoresizingMaskIntoConstraints="NO" id="xPY-9A-anT">
+                        <rect key="frame" x="317" y="111.5" width="30" height="30"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDY-we-SdW">
+                        <rect key="frame" x="358" y="107.5" width="62" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="H6Q-NP-NVo"/>
+                            <constraint firstAttribute="height" constant="42" id="VD9-1Y-TuU"/>
+                        </constraints>
+                        <connections>
+                            <action selector="ibaPlayButton:" destination="4eU-9O-8fO" eventType="touchUpInside" id="eAg-s9-M9l"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbD-Fd-25x">
+                        <rect key="frame" x="282" y="107.5" width="70" height="42"/>
+                        <connections>
+                            <action selector="ibaRecordButton:" destination="4eU-9O-8fO" eventType="touchUpInside" id="zqQ-Jn-TeU"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5os-uO-Uzx" firstAttribute="trailing" secondItem="9ww-F7-gRA" secondAttribute="trailingMargin" constant="-5" id="1aG-lA-a1Z"/>
+                    <constraint firstItem="Cap-QW-wjL" firstAttribute="top" secondItem="AaA-S4-TNb" secondAttribute="top" id="3an-UL-PPH"/>
+                    <constraint firstItem="5os-uO-Uzx" firstAttribute="bottom" secondItem="9ww-F7-gRA" secondAttribute="bottomMargin" id="6gP-hn-rJf"/>
+                    <constraint firstAttribute="bottom" secondItem="zDY-we-SdW" secondAttribute="bottom" id="6zD-yf-pBF"/>
+                    <constraint firstItem="tbD-Fd-25x" firstAttribute="centerY" secondItem="zDY-we-SdW" secondAttribute="centerY" id="EYg-WD-ErI"/>
+                    <constraint firstItem="xPY-9A-anT" firstAttribute="centerY" secondItem="5os-uO-Uzx" secondAttribute="centerY" id="Ikj-vg-PZF"/>
+                    <constraint firstItem="Cap-QW-wjL" firstAttribute="leading" secondItem="AaA-S4-TNb" secondAttribute="trailing" constant="8" id="Jkd-7b-ko5"/>
+                    <constraint firstItem="xPY-9A-anT" firstAttribute="width" secondItem="5os-uO-Uzx" secondAttribute="width" id="N8U-gI-EKW"/>
+                    <constraint firstItem="wyC-Pb-nbS" firstAttribute="leading" secondItem="AaA-S4-TNb" secondAttribute="trailing" constant="8" id="Qik-J8-Nvy"/>
+                    <constraint firstAttribute="trailing" secondItem="zDY-we-SdW" secondAttribute="trailing" id="Zur-6d-UWa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Cap-QW-wjL" secondAttribute="trailing" id="fVl-Gt-ngE"/>
+                    <constraint firstItem="AaA-S4-TNb" firstAttribute="bottom" secondItem="9ww-F7-gRA" secondAttribute="bottomMargin" id="h8M-5I-1xM"/>
+                    <constraint firstItem="tbD-Fd-25x" firstAttribute="leading" secondItem="wyC-Pb-nbS" secondAttribute="trailing" constant="-11" id="jbp-Dv-c7e"/>
+                    <constraint firstItem="wyC-Pb-nbS" firstAttribute="bottom" secondItem="AaA-S4-TNb" secondAttribute="bottom" id="ktD-fu-ZgZ"/>
+                    <constraint firstItem="xPY-9A-anT" firstAttribute="height" secondItem="5os-uO-Uzx" secondAttribute="height" id="l89-Nr-hBr"/>
+                    <constraint firstItem="zDY-we-SdW" firstAttribute="leading" secondItem="tbD-Fd-25x" secondAttribute="trailing" constant="6" id="lqa-De-17p"/>
+                    <constraint firstItem="AaA-S4-TNb" firstAttribute="leading" secondItem="9ww-F7-gRA" secondAttribute="leadingMargin" id="mAL-OD-2XE"/>
+                    <constraint firstItem="5os-uO-Uzx" firstAttribute="leading" secondItem="xPY-9A-anT" secondAttribute="trailing" constant="30" id="n5z-Pd-L1f"/>
+                    <constraint firstItem="tbD-Fd-25x" firstAttribute="width" secondItem="zDY-we-SdW" secondAttribute="width" constant="8" id="tBO-d0-HSG"/>
+                    <constraint firstItem="tbD-Fd-25x" firstAttribute="height" secondItem="zDY-we-SdW" secondAttribute="height" id="xcb-Ig-xPU"/>
+                    <constraint firstItem="AaA-S4-TNb" firstAttribute="top" secondItem="9ww-F7-gRA" secondAttribute="topMargin" id="zZf-4L-dWR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iboNameLabel" destination="Cap-QW-wjL" id="MaG-DU-Uqw"/>
+                <outlet property="iboPhoneNumberLabel" destination="wyC-Pb-nbS" id="3OS-bk-HRX"/>
+                <outlet property="iboPhotoLabel" destination="AaA-S4-TNb" id="pFe-fE-lBr"/>
+                <outlet property="iboPlayButton" destination="zDY-we-SdW" id="alQ-Wh-fm0"/>
+                <outlet property="iboPlayImageView" destination="5os-uO-Uzx" id="IcV-aQ-s8A"/>
+                <outlet property="iboRecordButton" destination="tbD-Fd-25x" id="Tyx-l3-3Dj"/>
+                <outlet property="iboRecordImageView" destination="xPY-9A-anT" id="bcB-TT-y3B"/>
+            </connections>
+            <point key="canvasLocation" x="163" y="225"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Photo" width="48" height="48"/>
+        <image name="Play" width="48" height="48"/>
+        <image name="Record" width="48" height="48"/>
+    </resources>
+</document>
