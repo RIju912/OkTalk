@@ -14,6 +14,7 @@
 		8BB35E141E600DCD0033F4E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB35E121E600DCD0033F4E3 /* LaunchScreen.storyboard */; };
 		8BB35E1F1E600DCD0033F4E3 /* GoTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E1E1E600DCD0033F4E3 /* GoTalkTests.swift */; };
 		8BB35E2A1E600DCD0033F4E3 /* GoTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E291E600DCD0033F4E3 /* GoTalkUITests.swift */; };
+		8BB35E441E6020590033F4E3 /* UIViewController+AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E431E6020590033F4E3 /* UIViewController+AlertsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +36,19 @@
 
 /* Begin PBXFileReference section */
 		8BB35E061E600DCD0033F4E3 /* GoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BB35E091E600DCD0033F4E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BB35E0B1E600DCD0033F4E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BB35E091E600DCD0033F4E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		8BB35E0B1E600DCD0033F4E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		8BB35E0E1E600DCD0033F4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8BB35E101E600DCD0033F4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BB35E101E600DCD0033F4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		8BB35E131E600DCD0033F4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8BB35E151E600DCD0033F4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB35E151E600DCD0033F4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		8BB35E1A1E600DCD0033F4E3 /* GoTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB35E1E1E600DCD0033F4E3 /* GoTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTalkTests.swift; sourceTree = "<group>"; };
 		8BB35E201E600DCD0033F4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB35E251E600DCD0033F4E3 /* GoTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB35E291E600DCD0033F4E3 /* GoTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTalkUITests.swift; sourceTree = "<group>"; };
 		8BB35E2B1E600DCD0033F4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB35E431E6020590033F4E3 /* UIViewController+AlertsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertsViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		8BB35E081E600DCD0033F4E3 /* GoTalk */ = {
 			isa = PBXGroup;
 			children = (
-				8BB35E091E600DCD0033F4E3 /* AppDelegate.swift */,
-				8BB35E0B1E600DCD0033F4E3 /* ViewController.swift */,
-				8BB35E0D1E600DCD0033F4E3 /* Main.storyboard */,
-				8BB35E101E600DCD0033F4E3 /* Assets.xcassets */,
-				8BB35E121E600DCD0033F4E3 /* LaunchScreen.storyboard */,
-				8BB35E151E600DCD0033F4E3 /* Info.plist */,
+				8BB35E421E601AD60033F4E3 /* Views and StoryBoards */,
+				8BB35E411E601A950033F4E3 /* ViewControllers */,
+				8BB35E401E601A150033F4E3 /* Categories */,
+				8BB35E3F1E6019C80033F4E3 /* AppResources */,
 			);
 			path = GoTalk;
 			sourceTree = "<group>";
@@ -123,6 +123,42 @@
 				8BB35E2B1E600DCD0033F4E3 /* Info.plist */,
 			);
 			path = GoTalkUITests;
+			sourceTree = "<group>";
+		};
+		8BB35E3F1E6019C80033F4E3 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				8BB35E091E600DCD0033F4E3 /* AppDelegate.swift */,
+				8BB35E101E600DCD0033F4E3 /* Assets.xcassets */,
+				8BB35E151E600DCD0033F4E3 /* Info.plist */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		8BB35E401E601A150033F4E3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8BB35E431E6020590033F4E3 /* UIViewController+AlertsViewController.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8BB35E411E601A950033F4E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BB35E0B1E600DCD0033F4E3 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			path = VIewControllers;
+			sourceTree = "<group>";
+		};
+		8BB35E421E601AD60033F4E3 /* Views and StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8BB35E0D1E600DCD0033F4E3 /* Main.storyboard */,
+				8BB35E121E600DCD0033F4E3 /* LaunchScreen.storyboard */,
+			);
+			path = "Views and StoryBoards";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +300,7 @@
 			files = (
 				8BB35E0C1E600DCD0033F4E3 /* ViewController.swift in Sources */,
 				8BB35E0A1E600DCD0033F4E3 /* AppDelegate.swift in Sources */,
+				8BB35E441E6020590033F4E3 /* UIViewController+AlertsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +342,7 @@
 				8BB35E0E1E600DCD0033F4E3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		8BB35E121E600DCD0033F4E3 /* LaunchScreen.storyboard */ = {
@@ -313,6 +351,7 @@
 				8BB35E131E600DCD0033F4E3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -512,6 +551,7 @@
 				8BB35E301E600DCD0033F4E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BB35E311E600DCD0033F4E3 /* Build configuration list for PBXNativeTarget "GoTalkTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +560,7 @@
 				8BB35E331E600DCD0033F4E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BB35E341E600DCD0033F4E3 /* Build configuration list for PBXNativeTarget "GoTalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +569,7 @@
 				8BB35E361E600DCD0033F4E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
