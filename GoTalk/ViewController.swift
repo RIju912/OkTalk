@@ -3,7 +3,7 @@
 //  GoTalk
 //
 //  Created by Subhodip on 24/02/17.
-//  Copyright © 2017 Subhodip. All rights reserved.
+//  Copyright © 2017 SUbhodip. All rights reserved.
 //
 
 import UIKit
