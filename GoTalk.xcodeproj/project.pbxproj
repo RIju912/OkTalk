@@ -20,6 +20,8 @@
 		8BB35E4F1E60711D0033F4E3 /* PhoneBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E4D1E60711D0033F4E3 /* PhoneBookCell.swift */; };
 		8BB35E501E60711D0033F4E3 /* PhoneBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB35E4E1E60711D0033F4E3 /* PhoneBookCell.xib */; };
 		8BB35E531E6200510033F4E3 /* PhoneBookSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E521E6200510033F4E3 /* PhoneBookSharedInstance.swift */; };
+		8BB35E551E621D890033F4E3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8BB35E541E621D890033F4E3 /* .gitignore */; };
+		8BB35E571E621E420033F4E3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E561E621E420033F4E3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		8BB35E4D1E60711D0033F4E3 /* PhoneBookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookCell.swift; sourceTree = "<group>"; };
 		8BB35E4E1E60711D0033F4E3 /* PhoneBookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneBookCell.xib; sourceTree = "<group>"; };
 		8BB35E521E6200510033F4E3 /* PhoneBookSharedInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookSharedInstance.swift; sourceTree = "<group>"; };
+		8BB35E541E621D890033F4E3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8BB35E561E621E420033F4E3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 		8BB35E3F1E6019C80033F4E3 /* AppResources */ = {
 			isa = PBXGroup;
 			children = (
+				8BB35E561E621E420033F4E3 /* README.md */,
+				8BB35E541E621D890033F4E3 /* .gitignore */,
 				8BB35E091E600DCD0033F4E3 /* AppDelegate.swift */,
 				8BB35E101E600DCD0033F4E3 /* Assets.xcassets */,
 				8BB35E151E600DCD0033F4E3 /* Info.plist */,
@@ -310,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB35E551E621D890033F4E3 /* .gitignore in Resources */,
 				8BB35E141E600DCD0033F4E3 /* LaunchScreen.storyboard in Resources */,
 				8BB35E111E600DCD0033F4E3 /* Assets.xcassets in Resources */,
 				8BB35E0F1E600DCD0033F4E3 /* Main.storyboard in Resources */,
@@ -344,6 +351,7 @@
 				8BB35E4B1E606FC10033F4E3 /* PhoneBookContactList.swift in Sources */,
 				8BB35E4F1E60711D0033F4E3 /* PhoneBookCell.swift in Sources */,
 				8BB35E441E6020590033F4E3 /* UIViewController+AlertsViewController.swift in Sources */,
+				8BB35E571E621E420033F4E3 /* README.md in Sources */,
 				8BB35E461E6058960033F4E3 /* ContactsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
