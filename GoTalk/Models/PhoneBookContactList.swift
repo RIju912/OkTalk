@@ -17,7 +17,7 @@ class PhoneBookContactList: NSObject {
     var phoneNumber: String?
     var image: UIImage?
     
-    
+    //MARK: - Init
     init(name: String, phoneNumber: String?, image: UIImage?) {
         self.name = name
         self.phoneNumber = phoneNumber

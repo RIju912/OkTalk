@@ -66,12 +66,12 @@ class ContactsVC: UIViewController {
                             self.contactsModel = contact!
                             self.iboTableView.reloadData()
                         } else {
-                            self.iboZeroContactsLabel.text = "Please provide permission to get contacts..."
+                            self.iboZeroContactsLabel.text = "Provide permission to get contacts..."
                         }
                     })
                 }
             }else{
-                self.iboZeroContactsLabel.text = "Please provide permission to get contacts..."
+                self.iboZeroContactsLabel.text = "Provide permission to get contacts..."
             }
         }
     }

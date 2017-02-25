@@ -30,9 +30,7 @@ class PhoneBookCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        iboPlayButton.isEnabled = false
-        iboPlayButton.alpha = 0.5
+        cellSetup()
         setSessionPlayback()
     }
 
@@ -40,6 +38,13 @@ class PhoneBookCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    //MARK: - Cell Setup
+    func cellSetup(){
+        
+        iboPlayButton.isEnabled = false
+        iboPlayButton.alpha = 0.5
     }
     
     //MARK: - Rounded Images
@@ -207,7 +212,9 @@ class PhoneBookCell: UITableViewCell {
         if self.recorder != nil {
             url = self.recorder.url
         } else {
-            url = self.soundFileURL!
+            if let myurl = self.soundFileURL{
+                url = myurl
+            }
         }
         do {
             self.player = try AVAudioPlayer(contentsOf: url!)

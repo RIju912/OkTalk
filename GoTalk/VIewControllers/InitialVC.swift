@@ -10,6 +10,7 @@ import UIKit
 
 class InitialVC: UIViewController {
     
+    //MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
