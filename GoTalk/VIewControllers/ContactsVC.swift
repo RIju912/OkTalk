@@ -37,10 +37,12 @@ class ContactsVC: UIViewController {
     @IBOutlet weak var iboSearchIcon: UIImageView!
     @IBOutlet weak var iboSearchButtonOutlet: UIButton!
     
-    // data
+    //MARK: - Variables
     var contactStorage = CNContactStore()
     var contactsModel = [PhoneBookContactList]()
     
+    
+    //MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -81,6 +83,7 @@ class ContactsVC: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    //MARK: - Auth for access
     func requestAccessToContacts(_ completion: @escaping (_ success: Bool) -> Void) {
         let authorizationStatus = CNContactStore.authorizationStatus(for: CNEntityType.contacts)
         
@@ -95,6 +98,7 @@ class ContactsVC: UIViewController {
         }
     }
     
+    //MARK: - Retrive contacts
     func retrieveContacts(_ completion: (_ success: Bool, _ contacts: [PhoneBookContactList]?) -> Void) {
         var contacts = [PhoneBookContactList]()
         do {
@@ -117,8 +121,8 @@ class ContactsVC: UIViewController {
 }
 
 extension ContactsVC: UITableViewDelegate, UITableViewDataSource{
-    
-    // UITableViewDataSource && Delegate methods
+
+    //MARK: - UITableViewDataSource && Delegate methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactsModel.count
     }

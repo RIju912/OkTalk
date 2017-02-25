@@ -32,16 +32,19 @@ class PhoneBookCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //MARK: - Rounded Images
     func setCircularAvatar() {
         iboPhotoLabel.layer.cornerRadius = iboPhotoLabel.bounds.size.width / 2.0
         iboPhotoLabel.layer.masksToBounds = true
     }
     
+    //MARK: - Layout
     override func layoutIfNeeded() {
         super.layoutIfNeeded()
         setCircularAvatar()
     }
     
+    //MARK: - ConfigureCell
     func configureWithContactEntry(_ contact: PhoneBookContactList) {
         iboNameLabel.text = contact.name
         iboPhoneNumberLabel.text = contact.phoneNumber ?? ""

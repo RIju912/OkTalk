@@ -11,9 +11,12 @@ import AddressBook
 import Contacts
 
 class PhoneBookContactList: NSObject {
+    
+    //MARK: - Variables
     var name: String!
     var phoneNumber: String?
     var image: UIImage?
+    
     
     init(name: String, phoneNumber: String?, image: UIImage?) {
         self.name = name
@@ -21,6 +24,7 @@ class PhoneBookContactList: NSObject {
         self.image = image
     }
     
+    //MARK: - Access names , image , phonenumber
     init?(cnContact: CNContact) {
         // name
         if !cnContact.isKeyAvailable(CNContactGivenNameKey) && !cnContact.isKeyAvailable(CNContactFamilyNameKey) { return nil }
