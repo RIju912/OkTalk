@@ -41,7 +41,7 @@
                                 <state key="normal" title="Proceed to retrive Phonebook contacts..."/>
                                 <connections>
                                     <action selector="ibaAccessPhoneBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="guO-d4-Fvq"/>
-                                    <segue destination="Eds-v4-9K0" kind="presentation" identifier="AccessToContacts" id="XlP-xS-4bg"/>
+                                    <segue destination="Eds-v4-9K0" kind="show" identifier="AccessToContacts" id="XlP-xS-4bg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2017 Vokal (Subhodip Banerjee)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9eO-0R-goE">

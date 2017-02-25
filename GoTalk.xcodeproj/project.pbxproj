@@ -19,6 +19,7 @@
 		8BB35E4B1E606FC10033F4E3 /* PhoneBookContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E4A1E606FC10033F4E3 /* PhoneBookContactList.swift */; };
 		8BB35E4F1E60711D0033F4E3 /* PhoneBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E4D1E60711D0033F4E3 /* PhoneBookCell.swift */; };
 		8BB35E501E60711D0033F4E3 /* PhoneBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB35E4E1E60711D0033F4E3 /* PhoneBookCell.xib */; };
+		8BB35E531E6200510033F4E3 /* PhoneBookSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB35E521E6200510033F4E3 /* PhoneBookSharedInstance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8BB35E4A1E606FC10033F4E3 /* PhoneBookContactList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookContactList.swift; sourceTree = "<group>"; };
 		8BB35E4D1E60711D0033F4E3 /* PhoneBookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookCell.swift; sourceTree = "<group>"; };
 		8BB35E4E1E60711D0033F4E3 /* PhoneBookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneBookCell.xib; sourceTree = "<group>"; };
+		8BB35E521E6200510033F4E3 /* PhoneBookSharedInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookSharedInstance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		8BB35E081E600DCD0033F4E3 /* GoTalk */ = {
 			isa = PBXGroup;
 			children = (
+				8BB35E511E62002F0033F4E3 /* PhoneBookSharedInstance */,
 				8BB35E4C1E6070F90033F4E3 /* PhoneBookCell */,
 				8BB35E491E606F8B0033F4E3 /* Models */,
 				8BB35E421E601AD60033F4E3 /* Views and StoryBoards */,
@@ -187,6 +190,14 @@
 				8BB35E4E1E60711D0033F4E3 /* PhoneBookCell.xib */,
 			);
 			path = PhoneBookCell;
+			sourceTree = "<group>";
+		};
+		8BB35E511E62002F0033F4E3 /* PhoneBookSharedInstance */ = {
+			isa = PBXGroup;
+			children = (
+				8BB35E521E6200510033F4E3 /* PhoneBookSharedInstance.swift */,
+			);
+			path = PhoneBookSharedInstance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB35E481E60676E0033F4E3 /* InitialVC.swift in Sources */,
+				8BB35E531E6200510033F4E3 /* PhoneBookSharedInstance.swift in Sources */,
 				8BB35E0A1E600DCD0033F4E3 /* AppDelegate.swift in Sources */,
 				8BB35E4B1E606FC10033F4E3 /* PhoneBookContactList.swift in Sources */,
 				8BB35E4F1E60711D0033F4E3 /* PhoneBookCell.swift in Sources */,

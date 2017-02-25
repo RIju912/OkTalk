@@ -41,11 +41,9 @@ class ContactsVC: UIViewController {
     var contactStorage = CNContactStore()
     var contactsModel = [PhoneBookContactList]()
     
-    
     //MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         iboTableView.register(UINib(nibName: "PhoneBookCell", bundle: nil), forCellReuseIdentifier: "PhoneBookCell")
     }
     
@@ -68,13 +66,12 @@ class ContactsVC: UIViewController {
                             self.contactsModel = contact!
                             self.iboTableView.reloadData()
                         } else {
-                            self.iboZeroContactsLabel.text = "Unable to get contacts..."
+                            self.iboZeroContactsLabel.text = "Please provide permission to get contacts..."
                         }
                     })
                 }
             }else{
-                self.iboZeroContactsLabel.text = "Unable to get contacts..."
-                self.showAlertMessage("Sorry, you have no permission for accessing the address book contacts.")
+                self.iboZeroContactsLabel.text = "Please provide permission to get contacts..."
             }
         }
     }
@@ -112,17 +109,16 @@ class ContactsVC: UIViewController {
         }
     }
     
-    
-    
     //MARK: - IBAction
     @IBAction func iboSearchButtonA(_ sender: UIButton) {
     }
 
 }
 
+
+//MARK: - UITableViewDataSource && Delegate methods
 extension ContactsVC: UITableViewDelegate, UITableViewDataSource{
 
-    //MARK: - UITableViewDataSource && Delegate methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactsModel.count
     }
