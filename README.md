@@ -1,8 +1,4 @@
-# OkTalk
-
-This is an assignment of Oktalk.
-
-Assignment is like -> 
+# GoTalk 
 
 Step 1: Contact Manager
 
